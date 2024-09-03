@@ -1,0 +1,32 @@
+kubectl get all
+
+kubectl apply -f nginx.yaml
+kubectl get all
+
+kubectl apply -f nginx-svc.yaml
+kubectl get all
+
+minikube service my-nginx --url
+
+kubectl get all
+kubectl get po 
+kubectl get po 'pod-name'
+kubectl get svc
+kubectl get svc 'svc-name'
+kubectl get deployment
+
+kubectl scale --replicas=3 deployment.apps/my-nginx
+
+kubectl delete po 'name'
+kubectl delete po --all
+kubectl get all
+
+kubectl delete svc
+kubectl delete 'svc-name'
+
+kubectl get all
+
+kubectl delete deploy
+kubectl delete 'deployment-name'
+
+kubectl get all
